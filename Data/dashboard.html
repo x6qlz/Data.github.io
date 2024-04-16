@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        /* Add your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #00ff00;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            border-radius: 4px;
+            background-color: #00ff00;
+            color: #121212;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #005500;
+        }
+        #picsContainer {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the Home Page</h1>
+    <button onclick="showOppList()">Opp List</button>
+    <button onclick="showPics()">Pics</button>
+    <button onclick="showOppGroups()">Opp Groups</button>
+    <button onclick="showCredits()">Credits</button>
+
+    <div id="oppList" style="display: none;">
+        <h2>Main Opps:</h2>
+        <ul>
+            <li><a href="https://www.roblox.com/users/445990192/profile" target="_blank">CYP3RBOT</a></li>
+            <li><a href="https://www.roblox.com/users/647878239/profile" target="_blank">Drac0ed</a></li>
+            <li><a href="https://www.roblox.com/users/901448788/profile" target="_blank">GoldDPrime</a></li>
+            <li><a href="https://www.roblox.com/users/4132944291/profile" target="_blank">GoldDFlames</a></li>
+            <li><a href="https://www.roblox.com/users/365778497/profile" target="_blank">My_Ammo</a></li>
+            <li><a href="https://www.roblox.com/users/829956428/profile" target="_blank">My_Overseer</a></li>
+            <li><a href="https://www.roblox.com/users/276583666/profile" target="_blank">GoIdDtech</a></li>
+            <li><a href="https://www.roblox.com/users/2836728991/profile" target="_blank">GoldDRecoil</a></li>
+            <li><a href="https://www.roblox.com/users/611930311/profile" target="_blank">Winter0mega</a></li>
+            <li><a href="https://www.roblox.com/users/1519757924/profile" target="_blank">R2Bomb</a></li>
+            <li><a href="https://www.roblox.com/users/454640393/profile" target="_blank">My_Conquering</a></li>
+            <li><a href="https://www.roblox.com/users/2464478325/profile" target="_blank">Dintinkid</a></li>
+            <li><a href="https://www.roblox.com/users/1587420863/profile" target="_blank">ghouImagic</a></li>
+            <li><a href="https://www.roblox.com/users/1424120620/profile" target="_blank">ONECA1L</a></li>
+            <li><a href="https://www.roblox.com/users/610618033/profile" target="_blank">GoldDLegacy</a></li>
+            <li><a href="https://www.roblox.com/users/1996878055/profile" target="_blank">GoldDCatBlack</a></li>
+            <li><a href="https://www.roblox.com/users/971039200/profile" target="_blank">edrologan</a></li>
+            <li><a href="https://www.roblox.com/users/1649327930/profile" target="_blank">Chae5STAR</a></li>
+            <li><a href="https://www.roblox.com/users/272003259/profile" target="_blank">beefvz</a></li>
+            <li><a href="https://www.roblox.com/users/689193950/profile" target="_blank">Banzaify</a></li>
+            <!-- More list items -->
+        </ul>
+    </div>
+
+    <div id="picsContainer">
+        <!-- Add image elements here -->
+        <img src="https://media.discordapp.net/attachments/1223908166366920744/1227104066384171048/Screenshot_2024-04-08_205305.png?ex=66306b37&is=661df637&hm=8e9b8dd69c40b25a831a4ca1137760f4b536a763a12a417679c2b4bb107ed523&=&format=webp&quality=lossless&width=324&height=350" alt="Pic 1">
+        <img src="https://media.discordapp.net/attachments/1223908166366920744/1226358598745981008/image.png?ex=662db4f2&is=661b3ff2&hm=32bc9f2293c5a48058ea5c39b83a2b1ac0ba5b0f64f606d630d04d7dd50c8e2f&=&format=webp&quality=lossless" alt="Pic 2">
+        <img src="https://media.discordapp.net/attachments/1052317321378668574/1229868581391569007/image.png?ex=66313f5f&is=661eca5f&hm=8704bbe8d616cb8508dd2ea544291fb9fa8248d61225e6f280838c3f012ca3b9&=&format=webp&quality=lossless" alt="Pic 3">
+        <img src="https://media.discordapp.net/attachments/1052317321378668574/1229868687620571348/ka.png?ex=66313f78&is=661eca78&hm=44f61be3802b6319cb4874095a2731db68d5852dcbb8db457cebd20872aab722&=&format=webp&quality=lossless&width=301&height=350" alt="Pic 4">
+        <img src="https://media.discordapp.net/attachments/1052224598999056424/1229869445543890985/Untitled9_20220929182749.png?ex=6631402d&is=661ecb2d&hm=876deb5c147ce43c73e98c32f7fcca03fca386ef5fe6da248b25b7e64c9b5321&=&format=webp&quality=lossless&width=335&height=350" alt="Pic 5">
+        <!-- More images -->
+    </div>
+
+    <!-- Back arrow -->
+    <div id="backArrow" style="display: none; position: fixed; bottom: 20px; right: 20px; font-size: 24px; cursor: pointer;">&larr;</div>
+
+    <button onclick="goToLogin()" style="position: fixed; top: 20px; right: 20px;">Login</button>
+
+    <script>
+        function showPics() {
+            const oppList = document.getElementById('oppList');
+            const picsContainer = document.getElementById('picsContainer');
+            oppList.style.display = 'none';
+            picsContainer.style.display = 'block';
+            document.getElementById('backArrow').style.display = 'block'; // Show arrow
+        }
+
+        function showOppList() {
+            const oppList = document.getElementById('oppList');
+            const picsContainer = document.getElementById('picsContainer');
+            oppList.style.display = 'block';
+            picsContainer.style.display = 'none';
+            document.getElementById('backArrow').style.display = 'none'; // Hide arrow
+        }
+
+        function showOppGroups() {
+            const oppList = document.getElementById('oppList');
+            const picsContainer = document.getElementById('picsContainer');
+            oppList.style.display = 'none';
+            picsContainer.style.display = 'none';
+            document.getElementById('backArrow').style.display = 'block'; // Show arrow
+
+            const oppGroups = document.getElementById('oppGroups');
+            oppGroups.style.display = 'block'; // Show Opp Groups
+        }
+
+        function goToLogin() {
+            window.location.href = '/';
+        }
+
+        function showCredits() {
+            alert("This was made by x6qlz");
+        }
+
+        document.getElementById('backArrow').addEventListener('click', function() {
+            const oppList = document.getElementById('oppList');
+            const picsContainer = document.getElementById('picsContainer');
+            const oppGroups = document.getElementById('oppGroups');
+
+            oppList.style.display = 'block';
+            picsContainer.style.display = 'none';
+            oppGroups.style.display = 'none';
+            document.getElementById('backArrow').style.display = 'none'; // Hide arrow
+        });
+    </script>
+
+    <div id="oppGroups" style="display: none;">
+        <h2>Opp Groups:</h2>
+        <ul>
+            <li><a href="https://www.roblox.com/groups/34088770/DECADENSE#!/about" target="_blank">DECADENSE</a></li>
+            <li><a href="https://www.roblox.com/groups/33826561/Death-Un-t#!/about" target="_blank">Death-Un-t</a></li>
+            <li><a href="https://www.roblox.com/groups/16178466/GoldD-family#!/about" target="_blank">GoldD-family</a></li>
+        </ul>
+    </div>
+</body>
+</html>
